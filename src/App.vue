@@ -9,7 +9,8 @@
     <v-main>
       <HelloWorld />
       <list/>
-      
+      <router-view></router-view>
+      <voir/>
     </v-main>
   </v-app>
 </template>
@@ -17,6 +18,7 @@
 <script>
 import HelloWorld from "./components/HelloWorld";
 import list from "./components/list"
+import voir from "./components/voir"
 
 export default {
   name: "App",
@@ -24,6 +26,7 @@ export default {
   components: {
     HelloWorld,
     list,
+    voir
 },
 // mounted(){
 //   produits.listes().then(Response =>{
