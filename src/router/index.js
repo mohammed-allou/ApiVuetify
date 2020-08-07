@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import produit from '../components/produit'
 import Home from '../views/Home'
+import pain from '../components/pain'
 
 
 Vue.use(VueRouter)
@@ -18,6 +19,11 @@ const routes = [
     name: 'produit',
     component: produit
   },
+  {
+    path: '/pain',
+    name: 'pain',
+    component: pain
+  }
   
 
 ]
