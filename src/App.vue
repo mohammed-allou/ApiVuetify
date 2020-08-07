@@ -1,37 +1,26 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark >
+    <v-app-bar app color="yellow darken-4" dark>
       <v-spacer></v-spacer>
 
-      <h2 class="text-center">Listes des produits</h2>
+      <router-link to="/produit">
+        <h2 class="text-center">Listes des produits</h2>
+      </router-link>
+      <v-divider></v-divider>
+      <router-link to="/">
+        <v-icon>mdi-home-city</v-icon>
+      </router-link>
     </v-app-bar>
 
     <v-main>
-      <HelloWorld />
-      <list/>
-      <router-view></router-view>
-      <voir/>
+      <Home />
     </v-main>
+    <router-view></router-view>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
-import list from "./components/list"
-import voir from "./components/voir"
-
 export default {
   name: "App",
-
-  components: {
-    HelloWorld,
-    list,
-    voir
-},
-// mounted(){
-//   produits.listes().then(Response =>{
-//     console.log(Response)
-//   })
-// }
-}
+};
 </script>
