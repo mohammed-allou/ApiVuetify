@@ -27,7 +27,6 @@
             </v-card-text>
           </v-card>
         </v-hover>
-        <router-view></router-view>
       </v-col>
     </v-row>
     
