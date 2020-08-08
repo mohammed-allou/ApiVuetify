@@ -12,19 +12,13 @@
         <v-spacer></v-spacer>
 
         <v-col class="pa-2" outlined tile>
-          <router-link to="/produit">
+          <router-link to="/produits">
             <h2>Listes des produits</h2>
           </router-link>
         </v-col>
       </v-row>
-
-      
     </v-app-bar>
 
-    <v-main>
-      <Home />
-      <produit />
-    </v-main>
     <router-view></router-view>
   </v-app>
 </template>

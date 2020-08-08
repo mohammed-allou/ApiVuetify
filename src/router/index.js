@@ -1,31 +1,27 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import produit from '../components/produit'
+import list from '../components/list'
 import Home from '../views/Home'
-import pain from '../components/pain'
-
+import produit from '../components/produit'
 
 Vue.use(VueRouter)
 
 const routes = [
-
   {
     path: '/',
     name: 'Home',
     component: Home
   },
   {
-    path: '/produit',
-    name: 'produit',
-    component: produit
+    path: '/produits',
+    name: 'produits',
+    component: list
   },
   {
-    path: '/pain',
-    name: 'pain',
-    component: pain
+    path: '/produit/:id',
+    name: 'produit',
+    component: produit
   }
-  
-
 ]
 
 const router = new VueRouter({
