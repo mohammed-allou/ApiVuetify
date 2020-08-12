@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import list from '../components/list'
 import Home from '../views/Home'
 import produit from '../components/produit'
+import chariot from '../components/chariot'
+
 
 Vue.use(VueRouter)
 
@@ -21,6 +23,11 @@ const routes = [
     path: '/produit/:id',
     name: 'produit',
     component: produit
+  },
+  {
+    path: '/chariot',
+    name: 'chariot',
+    component: chariot
   }
 ]
 

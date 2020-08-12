@@ -16,12 +16,10 @@
     <div>
       <v-footer padless>
         <v-card class="flex">
-          <v-card-title class="yellow darken-4">
-            <strong class="subheading" color="white">COLOMBO</strong>
-
+          <v-card-title class="darken-1 display-2">
             <v-spacer></v-spacer>
 
-            <v-btn v-for="icon in icons" :key="icon" class="mx-4" dark icon>
+            <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
               <v-icon size="24px">{{ icon }}</v-icon>
             </v-btn>
           </v-card-title>

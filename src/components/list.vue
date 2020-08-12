@@ -16,21 +16,18 @@
             <v-card-text class="pt-6" style="position: relative;">
               <router-link :to="'/produit/' + produit.id">
                 <v-btn absolute color="orange" class="white--text" fab large right top>
-                    <v-icon>mdi-cart</v-icon>
+                  <v-icon>mdi-bread-slice-outline</v-icon>
                 </v-btn>
               </router-link>
 
-              <h3 class="display-1 font-weight-light orange--text mb-2 text-uppercase">
-                {{produit.nom}}
-              </h3>
+              <h3
+                class="display-1 font-weight-light orange--text mb-2 text-uppercase"
+              >{{produit.nom}}</h3>
             </v-card-text>
           </v-card>
         </v-hover>
       </v-col>
     </v-row>
-    
-    
-   
   </v-app>
 </template>
 <script lang="js">
